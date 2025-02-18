@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  max-width: 110rem;
+  margin-inline: auto;
+}
+
+.container-second {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
+.grid-two-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.6rem;
+}
+
+/*Section main*/
+.section-main {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.788),
+      rgba(0, 0, 0, 0.658)
+    ),
+    url(img/background-panel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-primary {
+  text-align: center;
+  font-size: 4.6rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin-bottom: 6rem;
+  letter-spacing: -1.5px;
+}
+
+.main-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 6rem;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.2rem;
+  color: #fff;
+  background-color: #ffb01f;
+  border: solid 0.2rem #fff;
+  padding: 2rem 4rem;
+  border-radius: 9px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #ffa600;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.2rem;
+  color: #fff;
+  background-color: transparent;
+  border: solid 0.2rem #fff;
+  padding: 2rem 4rem;
+  border-radius: 9px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #ffb01f;
+}
+
+/*Section what*/
+.section-benefit {
+  padding: 9.6rem 0 9.6rem 0;
+}
+
+.subheading {
+  font-size: 2rem;
+  color: #ffb01f;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.heading-secondary {
+  font-size: 3.8rem;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.benefit-text-box {
+  font-size: 2rem;
+  line-height: 1.6;
+  align-self: center;
+  color: #333;
+  text-align: justify;
+}
+
+.benefit-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.benefit-img {
+  width: 90%;
+}
