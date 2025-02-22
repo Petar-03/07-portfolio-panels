@@ -28,6 +28,12 @@ body {
   gap: 6.6rem;
 }
 
+.grid-three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.6rem;
+}
+
 /*Section main*/
 .section-main {
   background-image: linear-gradient(
@@ -38,7 +44,7 @@ body {
     url(img/background-panel.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50rem;
+  height: 60rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,19 +152,19 @@ body {
 
 .benefit-img {
   width: 90%;
+  border-radius: 11px;
 }
 
 /*Section capable*/
 .section-capable {
   padding-bottom: 9.6rem;
-  padding-top: 9.6rem;
 }
 
 .capable-text {
   font-size: 2rem;
   line-height: 1.6;
   color: #333;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .cap-img {
@@ -175,19 +181,19 @@ body {
   display: flex;
   gap: 2.5rem;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   border-top: solid 2px #ffb11fb2;
 }
 
 .capable-fnc:last-child {
   border-bottom: solid 2px #ffb11fb2;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .capable-functions {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .capable-text-box {
@@ -199,4 +205,96 @@ body {
 .capable-image {
   display: flex;
   justify-content: center;
+}
+
+.solar-cap {
+  border-radius: 15px;
+  height: 100%;
+  width: 70%;
+}
+
+/*Section cards*/
+.section-cards {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.788),
+      rgba(0, 0, 0, 0.658)
+    ),
+    url(img/cards-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80rem;
+  margin-bottom: 9.6rem;
+}
+
+.first-card,
+.second-card,
+.third-card {
+  background-color: #ffffff63;
+  padding: 5rem 3rem;
+  border-radius: 11px;
+  margin-top: 7rem;
+}
+
+.card-header {
+  padding: 4rem 0 4rem 0;
+  border-top: solid 5px #ffb11fb2;
+  border-bottom: solid 5px #ffb11fb2;
+  margin-bottom: 6rem;
+}
+
+.heading-cards {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.subheading-cards {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-main {
+  padding-top: 4rem;
+  border-top: solid 1px #ffb11f50;
+}
+
+.card-data-1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.card-data-2 {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.card-btn:link,
+.card-btn:visited {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: #ffb11fb2;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border: solid 2px #fff;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #ffa600;
 }
