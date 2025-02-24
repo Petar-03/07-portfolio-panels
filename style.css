@@ -44,7 +44,8 @@ body {
     url(img/background-panel.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60rem;
+  /*height: 60rem;*/
+  padding: 16.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,17 +224,21 @@ body {
     url(img/cards-background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80rem;
+  /*height: 80rem;*/
   margin-bottom: 9.6rem;
+  padding: 6.6rem 0;
+  display: flex; /*question*/
+  flex-direction: column; /*question*/
+  justify-content: center; /*question*/
 }
 
 .first-card,
 .second-card,
 .third-card {
   background-color: #ffffff63;
+  backdrop-filter: blur(5px);
   padding: 5rem 3rem;
   border-radius: 11px;
-  margin-top: 7rem;
 }
 
 .card-header {
@@ -244,7 +249,7 @@ body {
 }
 
 .heading-cards {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
@@ -297,4 +302,49 @@ body {
 .card-btn:hover,
 .card-btn:active {
   background-color: #ffa600;
+}
+
+/*Section-transform*/
+.section-transform {
+  padding-bottom: 9.6rem;
+}
+
+.transform-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.margin-top-sm {
+  margin-top: 1rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2rem;
+}
+
+.transform-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.transform-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transform-img {
+  width: 100%;
+}
+
+/*Section cta*/
+.section-cta {
+  padding-bottom: 9.6rem;
+}
+
+.cta {
+  background-color: #ffb01f;
 }
