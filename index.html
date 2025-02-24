@@ -234,12 +234,52 @@
     </section>
     <section class="section-cta">
       <div class="container-second cta">
-        <h2 class="heading-secondary">Направи запитване</h2>
+        <h2 class="heading-secondary text-align-center">Направи запитване</h2>
         <p class="cta-text">
           Нашите слънчеви панели са оптимално решение за вашите нужди. Попълнете
           формата по-долу и нашите експерти ще се свържат с вас, за да обсъдите
-          най-доброто решение за вашия дом или бизнес.
+          най-доброто решение за вашия бизнес.
         </p>
+        <form class="cta-form grid-two-cols" action="#">
+          <div>
+            <label for="full-name">Пълно име</label>
+            <input required id="full-name" type="text" placeholder="Име" />
+          </div>
+
+          <div>
+            <label for="email">Имейл</label>
+            <input required id="email" type="email" placeholder="Имейл адрес" />
+          </div>
+
+          <div>
+            <label for="number">Телефон</label>
+            <input
+              required
+              id="number"
+              type="tel"
+              placeholder="Телефонен номер"
+            />
+          </div>
+          <div>
+            <label for="select">От къде научи за нас?</label>
+            <select required id="select" name="select">
+              <option value="">Моля, изберете една опция</option>
+              <option value="friends">Приятели</option>
+              <option vlaue="instagram">Instagram</option>
+              <option value="facebook">Реклама във Facebook</option>
+              <option value="other">Друго</option>
+            </select>
+          </div>
+          <div>
+            <input
+              class="content"
+              required
+              type="text"
+              placeholder="Съдържание"
+            />
+          </div>
+          <button type="submit">Изпратете</button>
+        </form>
       </div>
     </section>
   </body>
