@@ -81,6 +81,10 @@
     width: 66.3rem;
   }
 
+  .third-card-header {
+    width: 56rem;
+  }
+
   .card-main {
     border-top: none;
     padding-top: 0;
@@ -138,6 +142,14 @@
 
   .heading-secondary {
     font-size: 2.7rem;
+  }
+
+  .card-header {
+    width: 78rem;
+  }
+
+  .first-card-header {
+    width: 92rem;
   }
 
   .grid-footer {
