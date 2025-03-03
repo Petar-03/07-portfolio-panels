@@ -163,13 +163,11 @@
   }
 
   .container {
-    max-width: 50rem;
-    padding-inline: 3rem;
+    max-width: 60rem;
   }
 
   .container-second {
     max-width: 60rem;
-    padding-inline: 5rem;
   }
 
   .grid-three-cols-news {
@@ -203,5 +201,10 @@
   .transform-img-box {
     display: flex;
     justify-content: center;
+  }
+
+  .grid-footer {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
   }
 }
