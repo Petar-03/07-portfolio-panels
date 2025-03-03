@@ -227,14 +227,12 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transform: translateX(100%);
   }
 
   .nav-open .nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    transform: translateX(0%);
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
