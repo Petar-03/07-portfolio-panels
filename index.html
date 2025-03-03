@@ -10,11 +10,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Покриване на земеделска площ със слънчеви панели</title>
   </head>
   <body>
+    <header class="header">
+      <a href="#main">
+        <img class="logo" src="img/logo.png" alt="Логото на соларпънк" />
+      </a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#benefits" class="nav-item">Ползи</a>
+          </li>
+          <li>
+            <a href="#potential" class="nav-item">Потенциал</a>
+          </li>
+          <li>
+            <a href="#solar" class="nav-item">Соларизация</a>
+          </li>
+          <li>
+            <a href="#news" class="nav-item">Новини</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <section class="section-main">
+      <section class="section-main" id="main">
         <div class="container">
           <div class="header-text-box">
             <h1 class="heading-primary">
@@ -26,8 +48,8 @@
               скици до болките на успеха - ние сме готови да ви помогнем.
             </p>
             <div class="btns">
-              <a href="#" class="btn-full">Свържи се с нас</a>
-              <a href="#" class="btn-outline">Научи повече ↓</a>
+              <a href="#cta" class="btn-full">Свържи се с нас</a>
+              <a href="#main" class="btn-outline">Научи повече ↓</a>
             </div>
           </div>
           <div
@@ -37,7 +59,7 @@
           ></div>
         </div>
       </section>
-      <section class="section-benefit">
+      <section class="section-benefit" id="benefits">
         <div class="container-second">
           <span class="subheading">Ползи</span>
           <h2 class="heading-secondary">Какво предлагаме за вашата нива?</h2>
@@ -89,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section class="section-capable">
+      <section class="section-capable" id="potential">
         <div class="container-second grid-two-cols">
           <div class="capable-text-box">
             <div class="cap-text-box">
@@ -154,9 +176,9 @@
           role="img"
           aria-label="Снимка на слънчеви панели"
         ></div>
-        <div class="container-second grid-three-cols">
-          <div class="first-card">
-            <div class="card-header">
+        <div class="container-second-cards grid-three-cols">
+          <div class="card first-card">
+            <div class="card-header first-card-header">
               <p class="heading-cards">Жътва</p>
               <p class="subheading-cards">Синергия</p>
             </div>
@@ -173,7 +195,7 @@
               <a class="card-btn" href="#">Научи повече</a>
             </div>
           </div>
-          <div class="second-card">
+          <div class="card second-card">
             <div class="card-header">
               <p class="heading-cards">Агриволтаично</p>
               <p class="subheading-cards">земеделие</p>
@@ -191,7 +213,7 @@
               <a class="card-btn" href="#">Научи повече</a>
             </div>
           </div>
-          <div class="third-card">
+          <div class="card third-card">
             <div class="card-header">
               <p class="heading-cards">Значителен</p>
               <p class="subheading-cards">Успех</p>
@@ -211,7 +233,7 @@
           </div>
         </div>
       </section>
-      <section class="section-transform">
+      <section class="section-transform" id="solar">
         <div class="container-second grid-two-cols">
           <div class="transform-text-box">
             <div class="transform-text-box-header">
@@ -246,7 +268,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container-second cta">
           <h2 class="heading-secondary text-align-center">Направи запитване</h2>
           <p class="cta-text">
@@ -301,11 +323,11 @@
           </form>
         </div>
       </section>
-      <section class="section-news">
+      <section class="section-news" id="news">
         <div class="container-second">
           <span class="subheading">Новини</span>
           <h2 class="heading-secondary">Научете повече?</h2>
-          <div class="grid-three-cols">
+          <div class="grid-three-cols-news">
             <div class="new">
               <img
                 class="new-image"
@@ -358,5 +380,85 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container-second grid-footer">
+        <div class="logo-col">
+          <div>
+            <a href="#main">
+              <img class="logo" src="img/logo.png" alt="Логото на соларпънк" />
+            </a>
+            <ul class="social-links">
+              <li>
+                <a class="footer-social" target="_blank" href="#">
+                  <ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a class="footer-social" target="_blank" href="#">
+                  <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="logo-col-text">
+            Авторски права © 2024 от Solarpunk, Inc. Всички права запазени.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Свържете се с нас</p>
+          <p class="address">
+            ул. Гладиола №26, гр. Варна, Варна, 9000 България
+          </p>
+          <p>
+            <a class="footer-link" href="tel:+359 88 678 2321"
+              >+359 88 678 2321</a
+            >
+            <br />
+            <a class="footer-link" href="petar_ganchev03@abv.bg"
+              >petar_ganchev03@abv.bg</a
+            >
+          </p>
+        </div>
+        <div class="products">
+          <p class="footer-heading">Продукти</p>
+          <ul class="products-list">
+            <li>
+              <a href="#" class="product-detail">Слънчеви панели</a>
+            </li>
+            <li>
+              <a href="#" class="product-detail">Инвертори</a>
+            </li>
+            <li>
+              <a href="#" class="product-detail">Аксесоари</a>
+            </li>
+            <li>
+              <a href="#" class="product-detail">Монтажи</a>
+            </li>
+            <li>
+              <a href="#" class="product-detail">Акумулатори</a>
+            </li>
+          </ul>
+        </div>
+        <div class="comapny">
+          <p class="footer-heading">Компания</p>
+          <a href="#" class="product-detail">За Solarpunk</a>
+        </div>
+        <div class="resources">
+          <p class="footer-heading">Ресурси</p>
+          <a href="#" class="product-detail">Поверителност </a>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 165, 0, 0.5);
+}
+
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +28,11 @@ body {
   margin-inline: auto;
 }
 
+.container-second-cards {
+  max-width: 120rem;
+  margin-inline: auto;
+}
+
 .grid-two-cols {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -32,6 +43,54 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 6.6rem;
+}
+
+.grid-three-cols-news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.6rem;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  gap: 9.6rem;
+}
+
+/*Navigation*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4.8rem;
+}
+
+.logo {
+  height: 3.4rem;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.nav-list .nav-item:link,
+.nav-list .nav-item:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.nav-list .nav-item:hover,
+.nav-list .nav-item:active {
+  color: #ffa600;
 }
 
 /*Section main*/
@@ -45,7 +104,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /*height: 60rem;*/
-  padding: 16.5rem 0;
+  padding: 14rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,9 +286,10 @@ body {
   /*height: 80rem;*/
   margin-bottom: 9.6rem;
   padding: 6.6rem 0;
-  display: flex; /*question*/
-  flex-direction: column; /*question*/
-  justify-content: center; /*question*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .first-card,
@@ -403,6 +463,12 @@ body {
   background-color: #ffa600;
 }
 
+.cta-form input:focus,
+.cta-form select:focus,
+.cta-form button:focus {
+  box-shadow: 0 0 0 0.8rem rgba(214, 193, 3, 0.5);
+}
+
 /*Section news*/
 .section-news {
   padding-bottom: 9.6rem;
@@ -432,5 +498,86 @@ body {
   margin-top: 2rem;
   font-size: 1.6rem;
   line-height: 1.6;
+  color: #333;
+}
+
+/*Footer*/
+.footer {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  font-size: 2rem;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  color: #666;
+  transition: all 0.3s;
+}
+
+.social-icon:hover {
+  color: #333;
+}
+
+.logo-col-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.address {
+  font-size: 1.3rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.3rem;
+  text-decoration: none;
+  line-height: 1.6;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #333;
+}
+
+.products-list {
+  list-style: none;
+}
+
+.product-detail:link,
+.product-detail:visited {
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 3;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.product-detail:hover,
+.product-detail:active {
   color: #333;
 }

@@ -1,0 +1,207 @@
+/*Below 1232px*/
+@media (max-width: 77em) {
+  .section-main {
+    padding: 7rem 0;
+  }
+
+  .container-second {
+    max-width: 105rem;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .main-text {
+    font-size: 1.6rem;
+  }
+
+  .btn-full:link,
+  .btn-outline:link,
+  .btn-full:visited,
+  .btn-outline:visited {
+    font-size: 1.9rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .benefit-text-box {
+    font-size: 1.8rem;
+  }
+
+  .capable-text {
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+  }
+
+  .grid-three-cols {
+    gap: 4.5rem;
+  }
+}
+
+/*Below 1088px*/
+@media (max-width: 68em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .container-second {
+    max-width: 95rem;
+  }
+
+  .grid-two-cols {
+    gap: 3rem;
+  }
+
+  .grid-three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-header {
+    margin-bottom: 0;
+    width: 60.3rem;
+  }
+
+  .first-card-header {
+    width: 66.3rem;
+  }
+
+  .card-main {
+    border-top: none;
+    padding-top: 0;
+    border-left: 1px solid #ffb11f50;
+    padding-left: 5rem;
+  }
+
+  .container-second-cards {
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+
+  .solar-cap {
+    width: 90%;
+  }
+
+  .transform-heading {
+    margin-top: 3rem;
+  }
+}
+
+/*Below 896px*/
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    max-width: 80rem;
+  }
+
+  .card {
+    width: 80rem;
+  }
+
+  .container-second {
+    max-width: 90rem;
+  }
+
+  .benefit-text-box {
+    font-size: 1.5rem;
+  }
+
+  .benefit-img {
+    width: 80%;
+  }
+
+  .capable-text {
+    font-size: 1.5rem;
+  }
+
+  .cap-text {
+    font-size: 1.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.7rem;
+  }
+
+  .grid-footer {
+    gap: 3rem;
+  }
+}
+
+/*Below 752px*/
+@media (max-width: 47em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/*Below 592 px*/
+@media (max-width: 37em) {
+  .grid-two-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-img-box:nth-child(2) {
+    grid-row: 4;
+  }
+
+  .container {
+    max-width: 50rem;
+    padding-inline: 3rem;
+  }
+
+  .container-second {
+    max-width: 60rem;
+    padding-inline: 5rem;
+  }
+
+  .grid-three-cols-news {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 40rem;
+  }
+
+  .card-header {
+    width: 30rem;
+  }
+
+  .card-main {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid #ffb11f50;
+    padding-top: 4rem;
+  }
+
+  .solar-cap {
+    width: 70%;
+  }
+
+  .transform-img {
+    width: 90%;
+  }
+
+  .transform-img-box {
+    display: flex;
+    justify-content: center;
+  }
+}
