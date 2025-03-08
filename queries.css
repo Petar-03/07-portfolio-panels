@@ -176,11 +176,11 @@
   }
 
   .container {
-    max-width: 45rem;
+    max-width: 55rem;
   }
 
   .container-second {
-    max-width: 45rem;
+    max-width: 55rem;
   }
 
   .btn-full:link,
@@ -272,5 +272,16 @@
   .nav-list .nav-item:link,
   .nav-list .nav-item:visited {
     font-size: 3rem;
+  }
+}
+
+/*Below 384px*/
+@media (max-width: 24em) {
+  .container {
+    max-width: 45rem;
+  }
+
+  .container-second {
+    max-width: 45rem;
   }
 }
